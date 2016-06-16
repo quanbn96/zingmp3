@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zingmp3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zing-mp3-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aO0-mx-W9U">
+                                <rect key="frame" x="-4" y="140" width="328" height="288"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZING MP3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBT-WU-0RF">
+                                <rect key="frame" x="28" y="465" width="264" height="67"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyen Hong Quan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-fs-FSp">
+                                <rect key="frame" x="21" y="46" width="278" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aO0-mx-W9U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2WN-YR-sjH"/>
+                            <constraint firstItem="cBT-WU-0RF" firstAttribute="centerX" secondItem="aO0-mx-W9U" secondAttribute="centerX" id="3Wb-Da-Onc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5xW-fs-FSp" secondAttribute="bottom" constant="486" id="HKC-sc-I7S"/>
+                            <constraint firstItem="5xW-fs-FSp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SWj-tQ-1Y8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aO0-mx-W9U" secondAttribute="trailing" constant="-20" id="SYH-QX-OTa"/>
+                            <constraint firstItem="aO0-mx-W9U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V4F-7E-Z99"/>
+                            <constraint firstItem="aO0-mx-W9U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="lDt-Yk-lv6"/>
+                            <constraint firstItem="aO0-mx-W9U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="n2k-Tj-HHh"/>
+                            <constraint firstItem="cBT-WU-0RF" firstAttribute="top" secondItem="aO0-mx-W9U" secondAttribute="bottom" constant="37" id="ogn-VG-xXE"/>
+                            <constraint firstItem="aO0-mx-W9U" firstAttribute="top" secondItem="5xW-fs-FSp" secondAttribute="bottom" constant="58" id="x1a-id-jcw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logo" destination="aO0-mx-W9U" id="3Mr-nm-GsY"/>
+                        <outlet property="text" destination="cBT-WU-0RF" id="ZJb-Pm-tm7"/>
+                        <outlet property="text_p2" destination="5xW-fs-FSp" id="rR8-co-kCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="219" y="363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="zing-mp3-2.jpg" width="1024" height="1024"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

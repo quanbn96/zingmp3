@@ -12,6 +12,7 @@
 		1414C9701D12ACB8006BC886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1414C96E1D12ACB8006BC886 /* Main.storyboard */; };
 		1414C9721D12ACB8006BC886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1414C9711D12ACB8006BC886 /* Assets.xcassets */; };
 		1414C9751D12ACB8006BC886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1414C9731D12ACB8006BC886 /* LaunchScreen.storyboard */; };
+		141E630D1D12F3C40073E0EC /* zing-mp3-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 141E630C1D12F3C40073E0EC /* zing-mp3-2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1414C9711D12ACB8006BC886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1414C9741D12ACB8006BC886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1414C9761D12ACB8006BC886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141E630C1D12F3C40073E0EC /* zing-mp3-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zing-mp3-2.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		1414C9691D12ACB8006BC886 /* Zingmp3 */ = {
 			isa = PBXGroup;
 			children = (
+				141E630C1D12F3C40073E0EC /* zing-mp3-2.jpg */,
 				1414C96A1D12ACB8006BC886 /* AppDelegate.swift */,
 				1414C96C1D12ACB8006BC886 /* ViewController.swift */,
 				1414C96E1D12ACB8006BC886 /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1414C9751D12ACB8006BC886 /* LaunchScreen.storyboard in Resources */,
+				141E630D1D12F3C40073E0EC /* zing-mp3-2.jpg in Resources */,
 				1414C9721D12ACB8006BC886 /* Assets.xcassets in Resources */,
 				1414C9701D12ACB8006BC886 /* Main.storyboard in Resources */,
 			);
@@ -288,6 +292,7 @@
 				1414C97B1D12ACB8006BC886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
